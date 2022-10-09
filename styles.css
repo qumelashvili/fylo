@@ -161,10 +161,12 @@ footer{
     float: left;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
-    display: contents;   
 }
 .main-img{
     order: 2;
+}
+.illustration{
+    width: 100%;
 }
 
 /* SHORTCUTS */
@@ -265,5 +267,6 @@ footer{
     }
     .info-footer li{
         margin-top: 10px;
-    }   
+    }  
+    
 }

@@ -1,0 +1,269 @@
+html{
+    font-size: 12px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 24px;
+}
+.logo{
+    height: 30px;
+}
+.nav-list{
+    font-size: 1rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: #07043B;
+}
+.nav-list li{
+    margin-left: 25px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 33px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+}
+header img{
+    width: 305px;
+}
+.header-content h1{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 36px;
+    margin-top: 30px;
+}
+.header-content p{
+    font-size: 1em;
+    line-height: 21px;
+}
+.btn-area button, .btn-area input{
+    width: 100%;
+    height: 40px;
+}
+.btn-area input{
+    border: 0.625px solid #07043B;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border-radius: 3.125px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin: 20px 0px 5px 0px;
+}
+.btn-area button{
+    background: #2F65F8;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border-radius: 3.125px;
+    border: transparent;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+main{
+    margin-top: 100px;
+}
+.main > img{
+    width: 100%;
+    height: 100%;
+}
+.main-content > img{
+    width: 100%;
+    padding-bottom: 87px;
+}
+.main-content{
+    margin-top: -5px;
+    background-color: #F8F8FE;
+    text-align: center;
+    padding: 0px 35px 80px 25px;
+}
+.main-content > p{
+    font-size: 1.17em;
+    margin-top: 20px;
+}
+.main-content a{
+    font-size: 1em;
+    text-decoration: none;
+    border-bottom: 1px solid #3DA08F;
+    padding-bottom: 5px;
+    display: inline-flex;
+    color: #3DA08F;
+}
+.main-content a img{
+    margin-left: 5px;
+}
+.fylo{
+    padding: 26px 33px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.0458843);
+    border-radius: 5px;
+    text-align: start;
+    margin-top: 40px;
+}
+.fylo > p{
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    font-size: 1.1em;
+}
+.profile-area{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+}
+.profile-area img{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.subscription{
+    padding: 54px 48px 71px 48px;
+    background-color: #575988;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 6px;
+}
+.subscription h1{
+    font-size: 3em;
+}
+.subscription p{
+    font-size: 2.3em;
+    margin-top: 20px;
+}
+footer{
+    background-color: #07043B;
+    padding: 65px 42px;
+}
+.info-footer ul{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.info-footer li{
+    display: flex;
+    align-items: center;
+}
+.info-footer img{
+    height: 16px;
+}
+.alert::before{
+    content: "Please check your email";
+    color: #EF4877;
+    float: left;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    display: contents;   
+}
+.main-img{
+    order: 2;
+}
+
+/* SHORTCUTS */
+.sans{
+    font-family: 'Open Sans', sans-serif;
+}
+.raleway{
+    font-family:'Raleway', sans-serif;
+}
+.bold{
+    font-weight: 700;
+}
+.small{
+    font-size: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+    nav{
+        padding: 60px 80px 0px 80px;
+    }
+    header{
+        padding:  0px 80px;
+        justify-content: space-between;
+        text-align: left;
+        margin-top: 100px;
+    }
+    header > img{
+        order: 2;
+        width: 640px;
+    }    
+    .header-content{
+        width: 600px;
+    }
+    .header-content h1, .main-text h2{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .header-content p, .main-text > p{
+        font-size: 17px;
+        line-height: 24px;
+    }
+    header .btn-area{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 25px;
+    }
+    .btn-area input{
+        margin: 0px;
+    }
+    header .btn-area button{
+        width: 200px;
+        margin-left: 20px;
+    }
+    .button-header{
+        grid-column: 2/3;
+    }
+    .error-header{
+        grid-row: 2/3;
+    }
+    main > img{
+        width: 100%;
+    }
+    .main-content{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 80px 100px 80px;
+    }
+    .main-content .illustration{
+        width: 540px;
+    }
+    .main-text{
+        order: 1;
+        text-align: left;
+    }
+    .fylo{
+        width: 356px;
+    }
+    .subscription{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subscription > div{
+        text-align: left;
+    }
+    .subscription .btn-area button{
+        margin: 0px;
+        width: 200px;
+    }
+    .subscription .btn-area input{
+        width: 480px;
+    }
+    .subscription-text{
+        width: 530px;
+    }
+    .info-footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .info-footer li{
+        margin-top: 10px;
+    }   
+}
